@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.nav--logo {
+    width: 55.79px;
+    height: 55.22px;
+}
+
+.nav--title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.nav--text {
+    margin-left: auto;
+    padding-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+    opacity: 0.85;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px 20px 8px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 10px;
+}
+
+.form--input {
+    width: 300px;
+    height: 38px;
+    margin: 10px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form--input:focus {
+    border-color: #A626D3;
+}
+
+.form--button {
+    display: block;
+    margin: 0 auto;
+    width: 477px;
+    max-width: 90vw;
+    height: 42px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.form--button:hover { opacity: 0.88; }
+.form--button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.meme {
+    position: relative;
+    display: inline-block;
+    margin-top: 24px;
+    max-width: 600px;
+    width: 90vw;
+}
+
+.meme--image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 4px double #ccc;
+    border-radius: 4px;
+}
+
+.meme--text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0 8px;
+    word-break: break-word;
+}
+
+.meme--text-top { top: 16px; }
+.meme--text-bottom { bottom: 16px; }
